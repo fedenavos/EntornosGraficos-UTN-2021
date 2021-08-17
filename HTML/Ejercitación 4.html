@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 4</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+        <a href="https://www.frro.utn.edu.ar/"><img src="http://pledu.com.ar/sitio/wp-content/uploads/2017/10/utn.png" alt="UTN Logo"></a>
+        <br>
+        <h1>Año 2008</h1>
+        <table class="table" width="500" border="2">
+            <thead>
+                <tr>
+                    <th colspan="2">Examenes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td rowspan="2">Fecha: 18/08/2021</td>
+                    <td>Aprobados</td>
+                </tr>
+                <tr align="center">
+                    <td>24/30</td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li><a href="#enunciado">Enunciado del examen</a></li>
+            <li><a href="https://www.frro.utn.edu.ar/" target="_blanck">Resolución</a></li>
+        </ol>
+        <div>
+            <p>Puede realizar consultas completando el siguiente formulario:</p> <br>
+            <form id="formConsulta" name="formConsulta" action="mailto:x@x.com" method="post" enctype="text/plain" target="_blank">
+                <label>E-mail: <input type="email" id="email" name="email" /></label><br />
+                <label>Consulta: <textarea id="consulta" name="consulta" rows="10" cols="40"></textarea></label><br />
+                <input type="submit" id="btnSubmit" name="btnSubmit" value="Enviar" />
+                <input type="reset" id="btnReset" name="btnReset" value="Borrar" />
+            </form>
+        </div>
+        <div id="enunciado">
+            <h2>Enunciado del examen</h2>
+            <p>Ejercicio 1: .................................................................................</p>
+            <p>Ejercicio 2: .................................................................................</p>
+        </div>
+        <div>
+            <p>Para más información dirigirse a: <a href="mailto:contacto@xx.com">contacto@xx.com</a></p>
+        </div>
+        </div>
+    </body>
+</html>
