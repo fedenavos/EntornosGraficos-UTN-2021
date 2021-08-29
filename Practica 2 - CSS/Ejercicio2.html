@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p#normal {
+            font-family: arial,helvetica;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        *#destacado {
+            border-style: solid;
+            border-color: blue;
+            border-width: 2px;
+        }
+        #distinto {
+            background-color: #9EC7EB;
+            color: red;
+        }
+    </style>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+    <p id="normal">Este es un párrafo</p>
+    <p id="destacado">Este es otro párrafo</p>
+    <table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+    <p id="distinto">Este es el último párrafo</p>
+
+    <p>
+        Con lo visto anteriormente en la sección de selectores, la primer regla afecta a todos los elementos &lt;p&gt; que tengan el id "normal".
+        A este le aplica la familia de la fuente, el tamaño y le aplica negrita. Esto lo vemos en la primera línea de la página.
+    </p>
+    <p>
+        Luego encontramos dos elementos que tienen el id "destacado" un table y un p. Al utilizarse el selector universal, esto nos dice
+        que sera aplicado a todos los elementos con ese id. En este caso le aplica un borde solido, de color azul y con un ancho de 2px.
+    </p>
+    <p>
+        Y por último, vemos que la tercera regla tiene #, por lo que afecta a los elementos con el determinado id. En este caso es el último párrafo,
+        al que se le pone un fondo celeste y las letras de color rojo. Vemos que el hecho de poner el * delante del id en el selector no afecta
+        al funcionamiento, ya que se aplica igualmente a todos los elementos con ese id.
+    </p>
+</body>
+</html>

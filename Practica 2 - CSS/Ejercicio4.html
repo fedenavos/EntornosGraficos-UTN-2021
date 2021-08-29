@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {color:green; }
+        a:link {color:gray }
+        a:visited{color:blue }
+        a:hover {color:fuchsia }
+        a:active {color:red }
+        p {font-family: arial,helvetica;font-size: 10px;color:black; }
+        .contenido{font-size: 14px;font-weight: bold; }
+    </style>
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <p class="contenido" style="font-weight: normal;">
+    Este es un texto ...............</p>
+    <table>
+    <tr>
+    <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+    <td><a href="http://www.google.com.ar">con un
+    enlace</a></td>
+    </tr>
+    </table>
+
+    <p>En estos dos casos, la utilización de CSS es bastante similar pero vamos a ver las diferencias.</p>
+    <p>La parte del enclace funciona igual en ambos casos, donde se le aplican diferentes colores a elemento a gracias a las pseudoclases (link, visited, hover, active).</p>
+    <p>Luego la tabla también se muestra de igual forma, con las letras verdes que se aplican a todos los elementos por el selector universal</p>
+    <p>La diferencia esta en el  "Este es un texto................".</p>
+    <p>
+        En el primero, por mas que la clase sea "contenido", tiene el atributo style que le pone el tipo de letra normal (no negrita).
+        Ahi vemos como prevalece el estilo propio del elemento sobre los estilos definidos en el head. Tambien vemos como el tamaño definido
+        en la regla del elemento p tiene menos especificidad que la regla de la clase "contenido", es por eso que interpreta el tamaño de la última regla.
+    </p>
+    <p>
+        En cambio, en el segundo ejemplo, es el body el que tiene la clase "contenido". En ese caso, la regla que se aplica a los parrafos prevalece
+        sobre la regla de la clase contenido.
+    </p>
+</body>
+</html>
