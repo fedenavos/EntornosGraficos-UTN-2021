@@ -1,6 +1,6 @@
 <?
 // Archivo para acumular el numero de visitas
-$archivo = "contador.dat";
+$archivo = "contador.txt";
 // Abrir el archivo para lectura
 $abrir = fopen($archivo, "r");
 // Leer el contenido del archivo
